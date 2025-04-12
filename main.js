@@ -99,6 +99,112 @@ const questions = [
         answers: ["Prawda","Fałsz"],
         correct: 0
     },
+    {
+        question: "Stopa bezrobocia to stosunek liczby bezrobotnych do liczby poszukujących pracę",
+        answers: ["Prawda","Fałsz"],
+        correct: 1
+    },
+    {
+        question: "Bezrobotni absolwenci tworzą bezrobocie strukturalne",
+        answers: ["Prawda","Fałsz"],
+        correct: 1
+    },
+    {
+        question: "Jeżeli w wyniku recesji spadnie sprzedaż materiałów budowlanych i sprzedawca zostanie zwolniony to będzie to przykład bezrobocia koniunkturalnego",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Bezrobocie strukturalne nie jest przykładem bezrobocia naturalnego.",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Każdy, kto nie pracuje jest bezrobotnym.",
+        answers: ["Prawda","Fałsz"],
+        correct: 1
+    },
+    {
+        question: "Inflacja jest:",
+        answers: ["zjawiskiem związanym tylko z gospodarką rynkową","zjawiskiem związanym tylko z gospodarką centralnie sterowaną","zjawiskiem związanym tylko z gospodarką naturalną","żadna z powyższych odpowiedz nie jest prawidłowa"],
+        correct: 3
+    },
+    {
+        question: "Na inflacji tracą",
+        answers: ["banki udzielające pożyczek o stałej stopie oprocentowania","banki udzielające pożyczek o zmiennej stopie oprocentowania","dłużnicy, którzy zaciagneli kredyt o stałej stopie oprocentowania","żadna z powyższych odpowiedzi nie jest prawidłowa"],
+        correct: 0
+    },
+    {
+        question: "Przyczyną inflacji popytowej jest",
+        answers: ["wzrost wynagrodzeń","wzrost kosztów wytwarzania","wzrost hurtowych cen żywności","żadna z powyższych odpowiedzi nie jest prawidłowa"],
+        correct: 3
+    },
+    {
+        question: "Inflacja pojawia sie dopiero wtedy, gdy w dłuższym okresie czasu wzrośnie ogólny poziom cen",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Gdy ceny rosną w tempie 350% rocznie to w gospodarce występuje hiperinflacja",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Inflacja popytowa jest efektem nadwyżki podaży globalnej nad popytem zagregowanym",
+        answers: ["Prawda","Fałsz"],
+        correct: 1
+    },
+    {
+        question: "Na inflacji tracą kredytobiorcy, którzy zaciagneli kredyty o stałej stopie oprocentowania.",
+        answers: ["Prawda","Fałsz"],
+        correct: 1
+    },
+    {
+        question: "Inflacja osłabia skłonnośc do oszczędzania",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Inflacja kosztowa jest wynikiem wzrostu kosztów produkcji w gospodarce",
+        answers: ["Prawda","Fałsz"],
+        correct: 0
+    },
+    {
+        question: "Kurs walutowy oznacza:",
+        answers: ["spadek wartości waluty krajowej","wartość importu dóbr w stosunku do wartości eksportu","cenę waluty obcej wyrażonej w walucie krajowej","cenę dóbr i usług wyprodukowanych w krajowej gospodarce przeliczonej na euro"],
+        correct: 2
+    },
+    {
+        question: "Podstawowe funkcje kursu walutowego to:",
+        answers: ["funkcja informacyjna i cenotwórcza","funkcja informacyjna i redystrybucyjna","fynkcja informacyjna i stabilizacyjna","funkcja stabilizacyjna i alokacyjna"],
+        correct: 0
+    },
+    {
+        question: "Kursy kupna oraz sprzedaży charakteryzują się tym, że:",
+        answers: ["kurs kupna jest większy od kursu sprzedaży","kurs kupna jest równy kursowi sprzedaży","kurs kupna jest niższy od kursu sprzedaży","kurs kupna zmienia się niezależnie od kursu sprzedaży"],
+        correct: 2
+    },
+    {
+        question: "Umocnienie się waluty krajowej w sysyemie kursów stałych nosi nazwę:",
+        answers: ["dewaluacji","rewaluacji","deprecjacji","aprecjacji"],
+        correct: 1
+    },
+    {
+        question: "Osłabienie się waluty krajowej w systemie kursów płynnych nosi nazwę:",
+        answers: ["dewaluacji","rewaluacji","deprecjacji","aprecjacji"],
+        correct: 2
+    },
+    {
+        question: "Jeżeli przed rokiem kurs dolara wynosił 1 USD = 3,75 PLN a rok później 1 USD = 4,5 PLN to nastąpiła:",
+        answers: ["aprecjacja złotego","deprecjacja dolara","deprecjacja złotego","dewaluacja dolara"],
+        correct: 2
+    },
+    {
+        question: "Wspólna europejska waluta euro zastąpiła już waluty narodowe w:",
+        answers: ["12 państwach UE","15 państwach UE","17 państwach UE","20 państwach UE"],
+        correct: 3
+    },
+
 
 ];
 
