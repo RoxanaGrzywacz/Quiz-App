@@ -43,10 +43,12 @@ h2 {
     margin-bottom: 20px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+/* Zablokowanie automatycznego stylowania linków i tekstów w Safari na iPhone */
+a, a:visited, a:hover, a:focus {
+    color: inherit !important; /* Przywraca kolor tekstu do domyślnego */
+    text-decoration: none !important; /* Usuwa podkreślenie */
   }
+  
   
 
 /* Kontener quizu */
