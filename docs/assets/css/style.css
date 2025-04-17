@@ -47,6 +47,8 @@ h2 {
 a, a:visited, a:hover, a:focus {
     color: inherit !important; /* Przywraca kolor tekstu do domyślnego */
     text-decoration: none !important; /* Usuwa podkreślenie */
+    -webkit-touch-callout: none; /* Wyłącza wykrywanie linków w iOS */
+    -webkit-user-select: none;   /* Zapobiega selekcji automatycznego linku */
   }
   
   
