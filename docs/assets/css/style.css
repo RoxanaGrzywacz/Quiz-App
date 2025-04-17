@@ -11,6 +11,7 @@ html, body {
 }
 
 html, body {
+    color: #333 !important;
     height: 100%;
     margin: 0;
     padding: 0;
