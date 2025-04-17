@@ -43,6 +43,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+
 /* Kontener quizu */
 #quiz-container {
     background-color: white;
