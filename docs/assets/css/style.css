@@ -25,12 +25,8 @@ main {
     flex: 1;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #20053d, #034dcc);
-    /*background-color: #f4f4f9;*/
     text-align: center;
     padding: 2rem;
-    /*max-width: 600px;
-    width: 100%;
-    margin: 0 auto;*/
 }
 
 header {
@@ -46,40 +42,71 @@ h2 {
     margin-bottom: 20px;
 }
 
+p {
+    color: #ccc;
+}
+
 /* Zablokowanie automatycznego stylowania linków i tekstów w Safari na iPhone */
 a, a:visited, a:hover, a:focus {
     color: inherit !important; /* Przywraca kolor tekstu do domyślnego */
     text-decoration: none !important; /* Usuwa podkreślenie */
     -webkit-touch-callout: none; /* Wyłącza wykrywanie linków w iOS */
     -webkit-user-select: none;   /* Zapobiega selekcji automatycznego linku */
-  }
+    user-select: none;
+}
   
   
 
 /* Kontener quizu */
 #quiz-container {
-    background-color: rgb(221, 207, 247);
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
     max-width: 400px;
     width: 100%;
+    
 }
 
 button {
-    display: block;
-    max-width: 400px;
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 auto;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s ease;
-    background-color: #b995e2;
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px auto;
+  font-size: 16px;
+  background: transparent;
+  color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+
+  appearance: none;
+  -webkit-appearance: none;
 }
+
+button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px; /* grubość ramki */
+  background: linear-gradient(to top, #471083, #0c58db); /* gradient ramki */
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0); 
+  -webkit-mask-composite: xor;
+     mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none; /* żeby nie blokowało kliknięcia */
+  z-index: -1;
+}
+
 .next_button {
     display: block;
     max-width: 400px;
@@ -88,9 +115,10 @@ button {
     margin: 30px auto 0;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
+    border: 1px solid #034dcc;
 }
 
 button:hover {
@@ -99,12 +127,12 @@ button:hover {
 
 /* Styl poprawnej odpowiedzi */
 .correct {
-    background-color: #a8e6a8; /* Łagodny zielony */
+    background-color: #2dc92d94; /* Łagodny zielony */
 }
 
 /* Styl niepoprawnej odpowiedzi */
 .incorrect {
-    background-color: #ff8a8a; /* Łagodny czerwony */
+    background-color: #e24b4bbb; /* Łagodny czerwony */
 }
 
 button:disabled {
@@ -117,4 +145,14 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     color: #ccc;
+}
+
+.explanation {
+    margin-top: 15px;
+    padding: 10px;
+    color: #ccc;
+    background: rgba(114, 108, 184, 0.05);
+    border-left: 4px solid #ccc;
+    font-style: italic;
+    border-radius: 4px;
 }
